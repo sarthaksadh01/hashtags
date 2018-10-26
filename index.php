@@ -21,7 +21,9 @@ if(isset($_GET['q']) && $_GET['q']!='') {
     include_once(dirname(__FILE__).'/config.php');
     include_once(dirname(__FILE__).'/lib/TwitterSentimentAnalysis.php');
     $datumbox = '6cf96970b2175640bdb3b55e7855d130';
-   define('DATUMBOX_API_KE','6cf96970b2175640bdb3b55e7855d130');
+
+   //define('DATUMBOX_API_KE','6cf96970b2175640bdb3b55e7855d130');//one
+   define('DATUMBOX_API_KE','395187fb8e64c6081f8ca52857f105bf');//two
    define('CONSUMER_KEY', '0XkHJqqcVPlMdwRusMIJtOsKm');
    define('CONSUMER_SECRET', 'w5hI49LAGABPcwtf4LxYHIdgB7BgDeE0qHkbnRPVYPGP8IsM7R');
    define('ACCESS_TOKEN', '902436734494883840-0oxDhUsDKl6YSBrpkWK7UAZKVv4FlXB');
