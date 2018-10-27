@@ -87,7 +87,7 @@ if(isset($_GET['tweet'])){
     $arr= explode(",",$response);
     $p = 0;
     $n = 0;
-    echo count($arr); 
+    //echo count($arr); 
     for($i=1;$i<count($arr)-1;$i++)
     {
         if($arr[$i]>1)$p++;
@@ -97,8 +97,8 @@ if(isset($_GET['tweet'])){
    $p = ($p/($p+$n))*100;
    $ne = 100-$p;
     $dataPoints = array(
-  	array("y" => $p, "label" => "positive%" ),
-  	array("y" => $ne, "label" => "negative%"  )
+  	array("y" => $p/100, "label" => "positive%" ),
+  	array("y" => $ne/100, "label" => "negative%"  )
   	
   );
 
